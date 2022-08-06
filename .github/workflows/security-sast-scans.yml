@@ -1,0 +1,13 @@
+name: "Security: SAST scans"
+
+on: 
+  workflow_dispatch:
+  push:
+    branches-ignore:
+      - "dependabot/**"
+
+jobs:
+  call-security-workflow:
+    name: "Security: Sast scans"
+    uses: ${{WORKFLOW_REPO}}/.github/workflows/security-workflow-executer.yml@main
+    secrets: inherit
