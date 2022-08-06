@@ -1,0 +1,4 @@
+*                                         @ajiohsudhaskndlmaspd/security-team
+CODEOWNERS                                @${{REPO_TEAM}}-approvers
+.github/workflows                         @${SEC_TEAM}-approvers
+.github/workflows/security-checks.yml     @security-team-approvers
